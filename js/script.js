@@ -72,3 +72,82 @@
 
 
 
+let myName = 'Ngozi'
+//this is a global variable because it is not specified inside a block
+function myFunction() {
+    let myAge = 10
+    //this is a local variable since it is inside a block
+    console.log(myName)
+    console.log(myAge)
+}
+
+
+// Using loops for an array
+
+let i = "Ejike"
+const isFemale = false;
+
+const myObj = {
+    name: "Audrey",
+    class: "JSS 1"
+}
+
+
+// console.log(numbers)
+
+// Challenge - Double all numbers in the array
+// 0 to length - 1
+
+// Using an ordinary for loop
+// const doubles = []
+
+// for (let i = 0; i < numbers.length; i++) {
+//     doubles.push(numbers[i]*2)
+// }
+
+// console.log(doubles)
+
+// Using array specific loop
+// const newDoubles = []
+// for (let i of numbers) {
+//    newDoubles.push(i*2)
+// }
+
+// const newerDoubles = []
+// for(let i in numbers) {
+// newerDoubles.push(numbers[i]*2)
+// }
+
+
+// console.log(newDoubles)
+// console.log(newerDoubles)
+
+
+
+
+// const numbers = [3, 7, 8, 13, 9, 5, 17, 21, 54, 950]
+
+//Challenge - Largest number inside array
+// Compare each item, against the previous one, and when one is greater, assign to a variable
+const numbers = [1000, 3, 7, 8, 13, 9, 5, 17, 21, 54, 950]
+let maximum = numbers[0]
+for (let number of numbers) {
+    if (maximum < number) {
+        maximum = number
+    }
+}
+
+console.log(maximum)
+
+// console.log(Math.max(...numbers))
+
+// Challenge - Smallest number inside array
+
+let minimum = numbers[0]
+for (number of numbers) {
+    if (minimum > number) {
+        minimum = number
+    }
+}
+
+console.log(minimum)
