@@ -123,8 +123,6 @@ const myObj = {
 // console.log(newerDoubles)
 
 
-
-
 const numbers = [3, 7, 8, 13, 9, 5, 17, 21, 54, 950]
 
 // Challenge - Largest number inside array
@@ -136,7 +134,7 @@ for (let number of numbers) {
     }
 }
 
-console.log(maximum)
+// console.log(maximum)
 
 // Challenge - Smallest number inside array
 
@@ -147,7 +145,7 @@ for (number of numbers) {
     }
 }
 
-console.log(minimum)
+// console.log(minimum)
 
 // Challenge - Add up all the numbers inside an array
 
@@ -157,13 +155,13 @@ for (let number of numbers) {
     sum = sum + number
 }
 
-console.log(sum)
+// console.log(sum)
 
 
 // Challenge - filter out all numbers less than 10
 const filtered = []
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > 10 ) {
+    if (numbers[i] > 10) {
         filtered.push(numbers[i])
     }
 }
@@ -177,22 +175,84 @@ for (let number of numbers) {
     }
 }
 
-console.log(result)
+// console.log(result)
 
 
+// Modern Javascript
+
+// Old way
+var name = "Ejike"
+
+// New ways
+// Creating variables
+let num = []
+const isFalse = true
+
+// Functions
+// Old way
+
+function oldWay() {
+    console.log('Old way')
+}
+
+// oldWay()
+
+//New way
+const newWay = () => {
+    console.log('New way')
+}
+
+// newWay()
+
+// Conditions 
+
+// Old way
+// let option = parseInt(prompt(`Enter number`))
+
+// if (option > 5) {
+//     console.log('Number greater than 5')
+// } else {
+//     console.log(`number less than 5`)
+// }
 
 
+// const isGreater = (option > 5) ? true : false
+// console.log(isGreater)
+
+// New way
+
+// (option > 5) ? console.log("True") : console.log("False")
+
+// console.log(name)
 
 
+// Challenge - enter a score, and the system tells you the corresponding grade
 
+// STEPS
+// 1. Get score (as a number, and it can be decimal)
+// 2. Compare score against the grading system below, and alert the Grade:
+/**
+ * 70 & above - A
+ * Below 70 to 60 - B
+ * Below 60 to 50 - C
+ * Below 50 to 45 - D
+ * Below 45 - 40 - E
+ * Below 40 - F
+ */
 
+// Implementation
+// 1. Get score (as a number, and it can be decimal)
 
+let score = prompt(`Enter Score`);
+score = parseInt(score);
 
-
-
-
-
-
+// 2. Compare score against the grading system below:
+(score >= 70) ?
+    alert("A") : (score >= 60 && score < 70) ?
+        alert("B") : (score >= 50 && score < 60) ?
+            alert("C") : (score >= 45 && score < 50) ?
+                alert("D") : (score >= 40 && score < 45) ?
+                    alert("E") : alert("F")
 
 /**
  * Foreach
