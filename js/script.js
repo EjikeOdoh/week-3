@@ -149,8 +149,50 @@ for (number of numbers) {
 
 console.log(minimum)
 
-
 // Challenge - Add up all the numbers inside an array
+
+let sum = 0;
+
+for (let number of numbers) {
+    sum = sum + number
+}
+
+console.log(sum)
+
+
+// Challenge - filter out all numbers less than 10
+const filtered = []
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 10 ) {
+        filtered.push(numbers[i])
+    }
+}
+
+
+const result = []
+
+for (let number of numbers) {
+    if (number > 10) {
+        result.push(number)
+    }
+}
+
+console.log(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Foreach
