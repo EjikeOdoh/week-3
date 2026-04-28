@@ -125,11 +125,10 @@ const myObj = {
 
 
 
-// const numbers = [3, 7, 8, 13, 9, 5, 17, 21, 54, 950]
+const numbers = [3, 7, 8, 13, 9, 5, 17, 21, 54, 950]
 
-//Challenge - Largest number inside array
+// Challenge - Largest number inside array
 // Compare each item, against the previous one, and when one is greater, assign to a variable
-const numbers = [1000, 3, 7, 8, 13, 9, 5, 17, 21, 54, 950]
 let maximum = numbers[0]
 for (let number of numbers) {
     if (maximum < number) {
@@ -138,8 +137,6 @@ for (let number of numbers) {
 }
 
 console.log(maximum)
-
-// console.log(Math.max(...numbers))
 
 // Challenge - Smallest number inside array
 
@@ -151,3 +148,23 @@ for (number of numbers) {
 }
 
 console.log(minimum)
+
+
+// Challenge - Add up all the numbers inside an array
+
+/**
+ * Foreach
+ * Modern Array methods
+ * Creating Objects
+ * Factory functions
+ * Groundwork for Student manager project
+ * 1. Add Student
+ * 2. View All Students
+ * 3. Search Student
+ * 4. Update Student
+ * 5. Delete Student
+ * 6. Exit
+ */
+
+
+
