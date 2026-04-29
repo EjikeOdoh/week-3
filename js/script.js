@@ -243,16 +243,117 @@ const newWay = () => {
 // Implementation
 // 1. Get score (as a number, and it can be decimal)
 
-let score = prompt(`Enter Score`);
-score = parseInt(score);
+// let score = prompt(`Enter Score`);
+// score = parseInt(score);
 
 // 2. Compare score against the grading system below:
-(score >= 70) ?
-    alert("A") : (score >= 60 && score < 70) ?
-        alert("B") : (score >= 50 && score < 60) ?
-            alert("C") : (score >= 45 && score < 50) ?
-                alert("D") : (score >= 40 && score < 45) ?
-                    alert("E") : alert("F")
+// (score >= 70) ?
+//     alert("A") : (score >= 60 && score < 70) ?
+//         alert("B") : (score >= 50 && score < 60) ?
+//             alert("C") : (score >= 45 && score < 50) ?
+//                 alert("D") : (score >= 40 && score < 45) ?
+//                     alert("E") : alert("F")
+
+
+// Modern Array Methods
+const randomNumbers = [7, 10, 24, 60, 27, 12, 30, 50, 65, 5, 26]
+
+// console.log(randomNumbers.length)
+
+//Double every number inside our array
+
+// const doubles = randomNumbers.map(function(num, index){
+//     return num * 2
+// })
+
+// Using array specific loop
+// const newDoubles = []
+// for (let i of numbers) {
+//    newDoubles.push(i*2)
+// }
+
+
+const doubles = randomNumbers.map((num) => {
+    return num * 2
+})
+
+const conciseDoubles = randomNumbers.map((x) => x * 2)
+
+
+// console.log(randomNumbers)
+// console.log(doubles)
+// console.log(conciseDoubles)
+
+// Only double numbers less than 20
+
+const lessThan20 = randomNumbers.map((x) => {
+    if (x < 20) {
+        return x * 2
+    }
+    return x
+})
+
+// console.log(lessThan20)
+
+const conciseLessThan20 = randomNumbers.map((x) => x < 20 ? x * 2 : x)
+
+// console.log(conciseLessThan20)
+
+// Tripple all numbers inside array
+
+const trippledNumbers = randomNumbers.map((number) => {
+    return number * 3
+})
+
+// console.log(trippledNumbers)
+
+// Tripple only numbers less than 30
+
+const numbersLess30 = randomNumbers.map((num) => {
+    if (num < 30) {
+        return num * 3
+    }
+    return num
+})
+
+
+// console.log(numbersLess30)
+
+
+// Filter method
+
+// Filter out numbers greater than 30
+
+const numbersLessThan30 = randomNumbers.filter((num) => {
+    return num < 30
+})
+
+
+function multiplyBy2(num) {
+    return num * 2
+}
+
+// console.log(multiplyBy2(11))
+
+const newArr = randomNumbers.map((item) => {
+    return multiplyBy2(item)
+})
+
+// console.log(newArr)
+
+// randomNumbers.map((item, index, array)=>{
+//     console.log(item, index)
+// })
+
+// console.log('Elizabeth'.startsWith('F'))
+
+const students = ['Chinaza', 'Melody', 'Ogechi', 'Princess', 'Audrey', 'Elizabeth', 'Asiya', 'Jemila', 'Martha', 'Gift', 'Deborah', 'Vivian']
+
+const studentsStartingWithLetterM = students.filter((name) => {
+    return name.length <= 5
+})
+
+// console.log(studentsStartingWithLetterM)
 
 /**
  * Foreach
@@ -267,6 +368,5 @@ score = parseInt(score);
  * 5. Delete Student
  * 6. Exit
  */
-
 
 
