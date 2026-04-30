@@ -106,13 +106,15 @@ const student2 = CreateStudent()
 //  * 6. Exit
 
 function getChoice() {
-    let choice = prompt(`Please enter an option:
-    1. Add Student
-    2. View All Students
-    3. Search Student
-    4. Update Student
-    5. Delete Student
-    6. Exit   
+    let choice = prompt(`
+    Please enter an option:
+    
+        1. Add Student
+        2. View All Students
+        3. Search Student
+        4. Update Student
+        5. Delete Student
+        6. Exit   
 `);
     choice = parseInt(choice);
     return choice
@@ -164,10 +166,5 @@ function studentManager() {
 // Do the above using switch
 // Before this, we should be able to get the choice of the user, and validate if it'
 
-// studentManager()
+studentManager()
 
-let count = 1
-while (count <= 10) {
-    console.log(count)
-    count++
-}
